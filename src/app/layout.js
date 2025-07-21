@@ -4,8 +4,8 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Call Analytics Dashboard",
-  description: "Comprehensive call analytics and recording management system",
+  title: "Bookwedgo Audio Analytics",
+  description: "Comprehensive call analytics dashboard for Bookwedgo",
 }
 
 export default function RootLayout({ children }) {
