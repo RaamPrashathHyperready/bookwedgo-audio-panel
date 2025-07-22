@@ -1,5 +1,6 @@
 import { Suspense } from "react"
 import { CallDetailsTable } from "@/components/call-details-table"
+import { ConversationFlowchart } from "@/components/conversation-flowchart"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
@@ -28,6 +29,11 @@ export default async function PhoneNumberPage({ params }) {
             </Suspense>
           </CardContent>
         </Card>
+
+        {/* Conversation Flowchart */}
+        <div className="mt-6">
+          <ConversationFlowchart phoneNumber={phoneNumber} />
+        </div>
       </div>
     </div>
   )
